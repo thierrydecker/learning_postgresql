@@ -7,3 +7,4 @@
 - [The DISTINCT clause](./postgresql_distinct.md)
 - [The WHERE clause](./postgresql_where.md)
 - [The LIMIT clause](./postgresql_limit.md)
+- [The FETCH clause](./postgresql_fetch.md)
