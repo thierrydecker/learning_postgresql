@@ -91,7 +91,7 @@ The following statement returns the next five films after the first five films s
             film
         ORDER BY
             title
-            OFFSET 5 ROWS
+        OFFSET 5 ROWS
         FETCH FIRST 5 ROW ONLY;
         
 ![Fetch 003](../images/fetch_003.png)
