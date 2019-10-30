@@ -10,6 +10,7 @@
 - [The FETCH clause](documents/postgresql_fetch.md)
 - [The IN clause](documents/postgresql_in.md)
 - [The BETWEEN clause](documents/postgresql_between.md)
+- [The LIKE clause](documents/postgresql_like.md)
 
 ## TODO
 
