@@ -1,6 +1,6 @@
 # ProgreSQL
 
-## Chapters
+## Fundamentals
 
 - [The SELECT statement](documents/postgresql_select.md)
 - [The ORDER BY clause](documents/postgresql_order_by.md)
