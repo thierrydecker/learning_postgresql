@@ -136,3 +136,49 @@ The following examples return all customers whose names start with the string An
             first_name LIKE 'Ann%'
             
 ![Where 005](../images/where_005.png)
+
+The % is called a wildcard that matches any string. The 'Ann%' pattern matches any string that starts with 'Ann'.
+
+## 6) Using `WHERE` clause with the `BETWEEN` operator example
+
+The following example finds customers whose first names start with the letter A and their lengths are between 3 and 5  
+by using the `BETWEEN` operator. 
+
+>Note that the `BETWEEN` operator returns true if a value is in a range of values.
+
+    SELECT
+        first_name,
+        LENGTH(first_name) name_length
+        FROM
+            customer
+        WHERE
+              first_name LIKE 'A%'
+          AND LENGTH(first_name) BETWEEN 3 AND 5
+        ORDER BY
+            name_length;
+            
+![Where 006](../images/where_006.png)
+
+In this example, we used the `LENGTH()` function returns the number of characters of the input string.
+
+## 7) Using `WHERE` clause with the not equal operator (`<>`) example
+
+This example finds customers whose first name starts with Bra and last name is not Motley:
+
+    SELECT
+        first_name,
+        last_name
+        FROM
+            customer
+        WHERE
+              first_name LIKE 'Bra%'
+          AND last_name <> 'Motley';
+          
+![Where 007](../images/where_007.png)
+
+>Note that you can use the `!=` operator instead of `<>` operator. They have the same effect.
+
+## What you have learned
+
+In this tutorial, you have learned how to use PostgreSQL `WHERE` clause in the `SELECT` statement to filter rows based 
+on a specified condition.
