@@ -202,6 +202,14 @@ query:
         WHERE
               payment.customer_id = customer.customer_id
           AND payment.staff_id = staff.staff_id;
+          
+For all these queries, the PgAdmin4 frontend gives you this explain(anation):
+
+![Inner join 007](../images/inner_join_008.png)
+
+- Firstly, the query engine inner joins `customer` table with `payment` table
+
+- Secondly, the resulting set of rows in joined with `staff` table.
 
 To join more than three tables, you apply the same technique.
 
