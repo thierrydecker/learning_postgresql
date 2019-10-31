@@ -1,4 +1,4 @@
-# PostgreSQL `GROUP BY`
+# PostgreSQL `GROUP BY` clause
 
 ## What you will learn
 
