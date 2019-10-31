@@ -88,9 +88,11 @@ The query returns an empty result set.
 
 The reason is that…
 
+![Natural join 004](../images/natural_join_004.png)
+
 Both tables also have a common column named `last_update`, which cannot be used for the join. 
 
-However, the NATURAL JOIN clause just uses the `last_update` column.
+However, the `NATURAL JOIN` clause just uses the `last_update` column.
 
 ## What you learned
 
