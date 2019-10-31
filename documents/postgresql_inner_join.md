@@ -205,7 +205,11 @@ query:
           
 For all these queries, the PgAdmin4 frontend gives you this explain(anation):
 
-![Inner join 007](../images/inner_join_008.png)
+![Inner join 008](../images/inner_join_008.png)
+
+DataGrip gives you this alternate view:
+
+![Inner join 008](../images/inner_join_009.png)
 
 - Firstly, the query engine inner joins `customer` table with `payment` table
 
