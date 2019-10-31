@@ -16,6 +16,7 @@
 - [Joins](documents/postgresql_joins.md)
 - [The INNER JOIN clause](documents/postgresql_inner_join.md)
 - [The LEFT JOIN clause](documents/postgresql_left_join.md)
+- [The self-join](documents/postgresql_self_join.md)
 
 ## TODO
 
