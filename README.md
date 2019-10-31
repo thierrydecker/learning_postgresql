@@ -20,6 +20,7 @@
 - [The FULL OUTER JOIN clause](documents/postgresql_full_outer_join.md)
 - [The CROSS JOIN clause](documents/postgresql_cross_join.md)
 - [The NATURAL JOIN](documents/postgresql_natural_join.md)
+- [The GROUP BY clause](documents/postgresql_group_by.md)
 
 ## TODO
 
