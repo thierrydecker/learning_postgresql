@@ -23,3 +23,7 @@
 - [Sub-query](documents/postgresql_subquery.md)
 - [The CREATE TABLE statement](documents/postgresql_create_table.md)
 - [The INSERT statement](documents/postgresql_insert.md)
+
+## Tips and Tricks
+
+- [Tips & Tircks](documents/postgresql_tips.md)
