@@ -15,6 +15,7 @@
 - [Aliases](documents/postgresql_alias.md)
 - [Joins](documents/postgresql_joins.md)
 - [The INNER JOIN clause](documents/postgresql_inner_join.md)
+- [The LEFT JOIN clause](documents/postgresql_left_join.md)
 
 ## TODO
 
