@@ -11,7 +11,10 @@
 - [The IN clause](documents/postgresql_in.md)
 - [The BETWEEN clause](documents/postgresql_between.md)
 - [The LIKE clause](documents/postgresql_like.md)
+- [The IS NULL operator](documents/postgresql_isnull.md)
 
 ## TODO
 
 - [Sub-query](documents/postgresql_subquery.md)
+- [The CREATE TABLE statement](documents/postgresql_create_table.md)
+- [The INSERT statement](documents/postgresql_insert.md)
