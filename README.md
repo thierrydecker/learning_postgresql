@@ -19,6 +19,7 @@
 - [The self-join](documents/postgresql_self_join.md)
 - [The FULL OUTER JOIN clause](documents/postgresql_full_outer_join.md)
 - [The CROSS JOIN clause](documents/postgresql_cross_join.md)
+- [The NATURAL JOIN](documents/postgresql_natural_join.md)
 
 ## TODO
 
