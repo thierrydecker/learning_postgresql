@@ -14,6 +14,7 @@
 - [The IS NULL operator](documents/postgresql_isnull.md)
 - [Aliases](documents/postgresql_alias.md)
 - [Joins](documents/postgresql_joins.md)
+- [The INNER JOIN clause](documents/postgresql_inner_join.md)
 
 ## TODO
 
