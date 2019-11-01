@@ -23,6 +23,7 @@
 - [The GROUP BY clause](documents/postgresql_group_by.md)
 - [The HAVING clause](documents/postgresql_having.md)
 - [The UNION operator](documents/postgresql_union.md)
+- [The INTERSECT operator](documents/postgresql_intersect.md)
 
 ## TODO
 
@@ -32,4 +33,4 @@
 
 ## Tips and Tricks
 
-- [Tips & Tircks](documents/postgresql_tips.md)
+- [Tips & Tricks](documents/postgresql_tips.md)
