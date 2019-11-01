@@ -125,7 +125,7 @@ If you put the `ORDER BY` clause at the end of each query, the combined result s
 Because when `UNION` operator combines the sorted result sets from each query, it does not guarantee the order of rows 
 in the final result set.
 
-As you will see later, the `UNION` and `UNION ALL` statements can also be combined in a GROUP BY clause.
+As you will see later, the `UNION` and `UNION ALL` statements can also be combined in a `GROUP BY` clause.
 
 Here is an example :
 
