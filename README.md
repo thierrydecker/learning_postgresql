@@ -1,5 +1,9 @@
 # ProgreSQL
 
+## Quick start
+
+- [What is PostgreSQL?](documents/postgresql_what.md)
+
 ## Fundamentals
 
 - [The SELECT statement](documents/postgresql_select.md)
