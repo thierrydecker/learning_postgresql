@@ -26,6 +26,7 @@
 - [The INTERSECT operator](documents/postgresql_intersect.md)
 - [The EXCEPT operator](documents/postgresql_except.md)
 - [The GROUPING SETS](documents/postgresql_grouping_sets.md)
+- [The CUBE sub-clause](documents/postgresql_cube.md)
 
 ## TODO
 
