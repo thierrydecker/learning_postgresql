@@ -53,7 +53,7 @@ In addition to the columns from a table, you can use literal values and expressi
 >
 > By convention, we will use SQL keywords in uppercase to make the code easier to read.
 
-##PostgreSQL SELECT examples
+## PostgreSQL SELECT examples
 
 Let’s take a look at some examples of using PostgreSQL `SELECT` statement.
 
