@@ -22,6 +22,7 @@
 - [The NATURAL JOIN](documents/postgresql_natural_join.md)
 - [The GROUP BY clause](documents/postgresql_group_by.md)
 - [The HAVING clause](documents/postgresql_having.md)
+- [The UNION operator](documents/postgresql_union.md)
 
 ## TODO
 
