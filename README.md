@@ -24,6 +24,7 @@
 - [The HAVING clause](documents/postgresql_having.md)
 - [The UNION operator](documents/postgresql_union.md)
 - [The INTERSECT operator](documents/postgresql_intersect.md)
+- [The EXCEPT operator](documents/postgresql_except.md)
 
 ## TODO
 
