@@ -93,7 +93,7 @@ Install `sudo` application:
     apt update
     apt install sudo
     
-Add your own ser account to sudo group:
+Add your own user account to sudo group:
 
     sudo adduser <user_account> sudo
     
@@ -334,5 +334,12 @@ If the PostgreSQL client is not installed on you host machine, you can try the p
 PostgreSQL server.
 
 ![Debian install 041](../images/debian_install/debian_install_041.png)
+
+## 2) Set up the `pgadmin` virtual machine
+
+### 2a and b) Install the Debian base system the same way you did the `postgresql` virtual machine.
+
+Follow the same steps (until the end of step `1b`), being careful with the name of the virtual machine that has to be 
+`pgadmin` and with the IP address that to be set up with `172.16.1.111` on the enp0s8 interface.
 
 So, here is the conclusion of this tutorial.
