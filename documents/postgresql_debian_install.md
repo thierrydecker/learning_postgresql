@@ -330,4 +330,9 @@ Exit your ssh session and connect to your PostgreSQL server with the following c
     
 ![Debian install 040](../images/debian_install/debian_install_040.png)
 
+If the PostgreSQL client is not installed on you host machine, you can try the previous commands directly from your 
+PostgreSQL server.
+
+![Debian install 041](../images/debian_install/debian_install_041.png)
+
 So, here is the conclusion of this tutorial.
