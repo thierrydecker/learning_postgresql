@@ -167,6 +167,167 @@ shown.
 
 You are now connected to the PostgreSQL shell.
 
-Issue the following commands to assign a password to `postgres` role:
+Issue the following commands to assign a password to `postgres` role and quit the shell:
+
+    \password
+    \q
 
 ![Debian install 036](../images/debian_install/debian_install_036.png)
+
+For now, your PostgreSQL engine is configured like this:
+
+- postgres system account has a password set
+- postgres database role has a password set
+- PostgreSQL engine only accepts connections from local
+
+We need to go further and make it:
+
+- Accept connections from network
+- Request passwords for roles connections
+
+Two configuration file will have to be modified: 
+
+- postgresql.conf
+- pg_hba.conf 
+
+The directory for these files is `/etc/postgresql/11/main`.
+
+First, let's make a backup of these two files:
+
+    cd /etc/postgresql/11/main
+    sudo mv postgresql.conf postgresql.conf.backup
+    sudo mv pg_hba.conf pg_hba.conf.backup
+    ls -al
+    
+![Debian install 037](../images/debian_install/debian_install_037.png)
+
+Now create the pg_hba.conf file:
+
+    sudo nano pg_hba.conf
+
+ and make it like this:
+    
+    #
+    # Records structure
+    #
+    # TYPE  DATABASE        USER            ADDRESS                 METHOD
+    #
+    
+    
+    #
+    # Database administrative login by Unix domain socket
+    #
+    local	all		postgres				md5
+    
+    #
+    # IPv4 local connections
+    #
+    host	all		postgres	0.0.0.0/0		md5
+
+
+Then create the postgresql.conf:
+
+    sudo nano postgresql.conf
+    
+ and make it like this:
+ 
+    #
+    # Files locations
+    #
+    data_directory = '/var/lib/postgresql/11/main'
+    hba_file = '/etc/postgresql/11/main/pg_hba.conf'
+    ident_file = '/etc/postgresql/11/main/pg_ident.conf'
+    external_pid_file = '/var/run/postgresql/11-main.pid'
+    
+    #
+    # Connections and Authentications
+    #
+    listen_addresses = '*'
+    port = 5432
+    max_connections = 100
+    unix_socket_directories = '/var/run/postgresql'
+    
+    #
+    # SSL
+    #
+    ssl = on
+    ssl_cert_file = '/etc/ssl/certs/ssl-cert-snakeoil.pem'
+    ssl_key_file = '/etc/ssl/private/ssl-cert-snakeoil.key'
+    
+    #
+    # Memory
+    #
+    shared_buffers = 128MB			# min 128kB
+    dynamic_shared_memory_type = posix	# the default is the first option
+    
+    #
+    # Checkpoints
+    #
+    max_wal_size = 1GB
+    min_wal_size = 80MB
+    
+    #
+    # Logging
+    #
+    log_line_prefix = '%m [%p] %q%u@%d '
+    log_timezone = 'Europe/Paris'
+    
+    #
+    # Process title
+    #
+    cluster_name = '11/main'
+    
+    #
+    # Statistics
+    #
+    stats_temp_directory = '/var/run/postgresql/11-main.pg_stat_tmp'
+    
+    #
+    # Locale and Formatting
+    #
+    datestyle = 'iso, dmy'
+    timezone = 'Europe/Paris'
+    
+    #
+    # default configuration for text search
+    #
+    default_text_search_config = 'pg_catalog.french'
+    
+    #
+    # Config file includes
+    #
+    include_dir = 'conf.d'
+
+As these two configuration files were created with `root` permissions, we need to assign them to `postgres` system 
+account:
+
+    sudo chown postgres:postgres *
+
+Now restart the PostgreSQL service and verify it's started:
+
+    sudo systemctl restart postgresql
+    sudo systemctl status postgresql
+    pg_isready
+    
+![Debian install 038](../images/debian_install/debian_install_038.png)
+
+Let's finalize this installation by trying to connect to PostgreSQL:
+
+    sudo -u postgres psql
+    
+and then quit the PostgreSQL shell.
+
+    \q
+
+![Debian install 039](../images/debian_install/debian_install_039.png)
+
+The final step of verification is to try to connect to your PostgreSQL engine from a remote location (your host).
+
+Exit your ssh session and connect to your PostgreSQL server with the following commands:
+
+    psql -U postgres -h 172.16.1.110
+    \q
+    
+![Debian install 040](../images/debian_install/debian_install_040.png)
+
+So, here is the conclusion of this tutorial.
