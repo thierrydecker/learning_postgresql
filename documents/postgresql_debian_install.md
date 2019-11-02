@@ -4,11 +4,21 @@
 
 ![Debian architecture](../images/debian_install/debian_architecture.png)
 
-## 1) Set up postgresql virtual machine
+## 1) Set up `postgresql` virtual machine
 
 The current tutorial is based on a Debian 10 (Buster) virtual machine.
 
+The postgresql virtual machine, is running two NICs.
+
+- The first one (`enp0s3`) is the primary interface and is set up as NAT interface in VirtualBox. This interface will 
+give access to the Internet. Address will probably be `10.0.2.15`.
+
+- The second one (`enp0s8`) is the secondary interface and is set up on a VirtualBox Host only network. This interface
+will give the internal connectivity in the lab between the different virtual machines.
+
 Carefully follow these steps to install the first virtual machine that will run the PostgreSQL database server.
+
+### 1a) Initial configuration
 
 ![Debian install 001](../images/debian_install/debian_install_001.png)
 
