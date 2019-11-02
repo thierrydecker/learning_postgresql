@@ -4,7 +4,7 @@
 
 ![Debian architecture](../images/debian_install/debian_architecture.png)
 
-## Set up postgresql virtual machine
+## 1) Set up postgresql virtual machine
 
 The current tutorial is based on a Debian 10 (Buster) virtual machine.
 
