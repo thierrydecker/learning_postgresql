@@ -2,77 +2,68 @@
 
 ## Architecture
 
+![Debian install 001](../images/debian_install/debian_architecture.png)
+
+## Set up postgresql virtual machine
+
+The current tutorial is based on a Debian 10 (Buster) virtual machine.
+
+Carefully follow these steps to install the first virtual machine that will run the PostgreSQL database server.
+
 ![Debian install 001](../images/debian_install/debian_install_001.png)
 
-## postgresql virtual machine
+![Debian install 002](../images/debian_install/debian_install_002.png)
 
-### Connect to the postgresql virtual machine using ssh.
+![Debian install 003](../images/debian_install/debian_install_003.png)
 
-![Debian install 001](../images/debian_install/debian_install_002.png)
+![Debian install 004](../images/debian_install/debian_install_004.png)
 
-### 1) Setup PostgreSQL PPA
+![Debian install 005](../images/debian_install/debian_install_005.png)
 
-    sudo install gnupg
-    sudo wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
-    sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+![Debian install 006](../images/debian_install/debian_install_006.png)
 
-### 2) Install PostgreSQL
+![Debian install 007](../images/debian_install/debian_install_007.png)
 
-    sudo apt update
-    sudo apt-get install postgresql postgresql-contrib
+![Debian install 008](../images/debian_install/debian_install_008.png)
 
-### 3) Connect to PostgreSQL
+![Debian install 009](../images/debian_install/debian_install_009.png)
 
-After installing the PostgreSQL database server by default, it creates a user `postgres` with role `postgres`. 
+![Debian install 010](../images/debian_install/debian_install_010.png)
 
-It also creates a system account with the same name `postgres`. 
+![Debian install 011](../images/debian_install/debian_install_011.png)
 
-So to connect to PostgreSQL server, login to your system as user postgres and connect the database.
+![Debian install 012](../images/debian_install/debian_install_012.png)
 
-    sudo -u postgres psql
+![Debian install 013](../images/debian_install/debian_install_013.png)
 
-Now you are logged in to PostgreSQL database server. 
+![Debian install 014](../images/debian_install/debian_install_014.png)
 
-To check login info use following command from the database command prompt.
+![Debian install 015](../images/debian_install/debian_install_015.png)
 
-    psql (12.0 (Debian 12.0-2.pgdg100+1))
-    Saisissez « help » pour l'aide.
-    
-    postgres=#
+![Debian install 016](../images/debian_install/debian_install_016.png)
 
-    postgres=# \conninfo
-    Vous êtes connecté à la base de données « postgres » en tant qu'utilisateur « postgres » via le socket dans « /var/run/postgresql » via le port « 5432 ».
-    postgres=# 
+![Debian install 017](../images/debian_install/debian_install_017.png)
 
-To disconnect from PostgreSQL database command prompt just type below command and press enter. 
+![Debian install 018](../images/debian_install/debian_install_018.png)
 
-It will return you back to Debian command prompt.
+![Debian install 019](../images/debian_install/debian_install_019.png)
 
-    postgres-# \q
-    
-> Currently, only `postgres` user exist on your system for connecting to PostgreSQL engine.
-> This account does not have any password and can only connect using unix socket from the local system.
-> As it is, you will not be able to connect to your PostgreSQL database server using any network connection.
+![Debian install 020](../images/debian_install/debian_install_020.png)
 
-## Set up PostgreSQL to accept network connections
+![Debian install 021](../images/debian_install/debian_install_021.png)
 
-    sudo nano /etc/postgresql/12/main/postgresql.conf
+![Debian install 022](../images/debian_install/debian_install_022.png)
 
-- Find the line containing `listen_address` and replace `localhost` by `ip_address_of_the_postgresql_machine`.
+![Debian install 023](../images/debian_install/debian_install_023.png)
 
-- Find the line containing `password_encryption` and replace the `md5` default value with `scram-sha-256`.
+![Debian install 024](../images/debian_install/debian_install_024.png)
 
-    sudo nano /etc/postgresql/12/main/pg_hba.conf
+![Debian install 025](../images/debian_install/debian_install_025.png)
 
-    
-### Set up a password for `postgres` user 
+![Debian install 026](../images/debian_install/debian_install_026.png)
 
-    psql (12.0 (Debian 12.0-2.pgdg100+1))
-    Saisissez « help » pour l'aide.
-    
-    postgres=# \password 
-    Saisissez le nouveau mot de passe : 
-    Saisissez-le à nouveau : 
-    postgres=# \q
+![Debian install 027](../images/debian_install/debian_install_027.png)
 
-## pgadmin virtual machine
+![Debian install 028](../images/debian_install/debian_install_028.png)
+
+![Debian install 029](../images/debian_install/debian_install_029.png)
