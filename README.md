@@ -3,6 +3,7 @@
 ## Quick start
 
 - [What is PostgreSQL?](documents/postgresql_what.md)
+- [Install the architecture](documents/postgresql_debian_install.md)
 
 ## Fundamentals
 

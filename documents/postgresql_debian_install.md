@@ -2,7 +2,7 @@
 
 ## Architecture
 
-![Debian install 001](../images/debian_install/debian_architecture.png)
+![Debian architecture](../images/debian_install/debian_architecture.png)
 
 ## Set up postgresql virtual machine
 
