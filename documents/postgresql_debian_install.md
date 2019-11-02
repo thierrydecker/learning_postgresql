@@ -38,6 +38,10 @@ Carefully follow these steps to install the first virtual machine that will run 
 
 ![Debian install 009](../images/debian_install/debian_install_009.png)
 
+>At the next step, configure your own user account: `tdecker` for me in this tutorial.
+>
+>This user account will be used for the rest of this tutorial.
+
 ![Debian install 010](../images/debian_install/debian_install_010.png)
 
 ![Debian install 011](../images/debian_install/debian_install_011.png)
@@ -77,3 +81,25 @@ Carefully follow these steps to install the first virtual machine that will run 
 ![Debian install 028](../images/debian_install/debian_install_028.png)
 
 ![Debian install 029](../images/debian_install/debian_install_029.png)
+
+### 1b) Setup network configuration
+
+From the virtual machine console:
+
+Connect as `root` user.
+
+Install `sudo` application:
+
+    apt update
+    apt install sudo
+    
+Add your own ser account to sudo group:
+
+    sudo adduser <user_account> sudo
+    
+Set up the secondary interface to assign it it's IP address:
+
+Edit the `interface` file.
+
+    nano /etc/network/interface
+
