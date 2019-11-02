@@ -103,3 +103,70 @@ Edit the `interface` file.
 
     nano /etc/network/interface
 
+and make it like this:
+
+![Debian install 030](../images/debian_install/debian_install_030.png)
+
+Restart networking service:
+
+    systemctl restart networking
+
+From now on, we will only use an `ssh` connection (with our own user account) from our host machine.
+
+    root@postgresql:~# logout
+
+### 1c) PostgreSQL installation
+
+From your host machine, connect to your `postgresql` virtual machine via ssh, using your own user account.
+
+![Debian install 031](../images/debian_install/debian_install_031.png)
+
+    sudo apt update
+    sudo apt install postgresql-11
+
+Verify your installation:
+
+    pg_isready
+
+You should see:
+
+![Debian install 032](../images/debian_install/debian_install_032.png)
+
+    systemctl status progresql
+    
+![Debian install 033](../images/debian_install/debian_install_033.png)
+
+### 1c) Securing and configuring PostgreSQL database engine
+
+By default, PostgreSQL uses the concept of roles to manage database access permissions and database roles are 
+conceptually completely separate from operating system users. 
+
+A role can be a user or a group, and a role that has login right is called user.
+
+A freshly initialized system always contains one predefined role called `postgres`, it has the same name as the 
+operating system user account called postgres, which is used to access the `psql` (PostgreSQL shell) and other database 
+programs.
+
+The PostgreSQL system user account is not protected using a password, to secure it, you can create a password using the 
+`passwd` utility.
+
+    sudo passwd postgres
+    
+![Debian install 034](../images/debian_install/debian_install_034.png)
+
+Also, the `postgres` role (or administrative database user if you like) is not secured by default. 
+
+You also need to secure it with a password. 
+
+Now switch to the postgres system user account and postgres role (remember to set a strong and secure password) as 
+shown.
+
+    sudo -u postgres psql
+    
+![Debian install 035](../images/debian_install/debian_install_035.png)
+
+You are now connected to the PostgreSQL shell.
+
+Issue the following commands to assign a password to `postgres` role:
+
+![Debian install 036](../images/debian_install/debian_install_036.png)
