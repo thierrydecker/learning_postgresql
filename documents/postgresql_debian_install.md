@@ -342,4 +342,91 @@ PostgreSQL server.
 Follow the same steps (until the end of step `1b`), being careful with the name of the virtual machine that has to be 
 `pgadmin` and with the IP address that to be set up with `172.16.1.111` on the enp0s8 interface.
 
+![Debian install 042](../images/debian_install/debian_install_042.png)
+
+![Debian install 043](../images/debian_install/debian_install_043.png)
+
+### 2c) Install `pgadmin` virtual machine
+
+From your host machine, connect to your `pgadmin` virtual machine via ssh, using your own user account.
+
+![Debian install 044](../images/debian_install/debian_install_044.png)
+
+Next, issue the following commands:
+
+    sudo apt update
+    sudo apt install curl ca-certificates gnupg
+    su root
+    curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+    exit
+
+Then create a file named `/etc/apt/sources.list.d/pgdg.list`:
+
+    sudo nano /etc/apt/sources.list.d/pgdg.list   
+
+and add the following line in the file:
+
+    deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main
+    
+Save the changes and exit the file.
+
+Now update the `apt` package cache (which is a mandatory step), and install the `pgadmin4` package as follows. 
+
+The `pgadmin4-apache2` package is the `WSGI` application.
+
+    sudo apt update
+    sudo apt install pgadmin4 pgadmin4-apache2
+    
+During the package installation, you will be asked to set an email address for the pgAdmin web interface initial user 
+account. 
+
+This email will work as the account name, provide it and press `Enter`.
+
+![Debian install 045](../images/debian_install/debian_install_045.png)
+
+You will also be asked to set a password for the pgadmin4 initial user account. 
+
+Provide a secure and strong password, then click Enter to proceed.
+
+![Debian install 046](../images/debian_install/debian_install_046.png)
+
+Once the packages are installed, the installer activates `systemd` to start the Apache2 service and enables it to 
+automatically start at system startup, every time the system is rebooted.
+
+You can check the status of the service with the following command to ensure that it is up and running.
+
+    sudo systemctl status apache2
+    
+![Debian install 047](../images/debian_install/debian_install_047.png)
+
+Now you can access the `pgAdmin4` web interface. 
+
+Open a web browser and point it to the following address and click Enter.
+
+    http://172.16.1.111/pgadmin4/
+    
+![Debian install 048](../images/debian_install/debian_install_048.png)
+
+Once the `pgAdmin4` web login interface appears, enter the email address and password that you set earlier on to 
+authenticate. Then click Login.
+
+![Debian install 049](../images/debian_install/debian_install_049.png)
+
+![Debian install 050](../images/debian_install/debian_install_050.png)
+
+Then add the new server connection name and a comment. 
+
+Click on the Connection Tab to provide the connection details I.e hostname, database name, database username, and 
+password as shown in the following screen shots.
+
+![Debian install 051](../images/debian_install/debian_install_051.png)
+
+![Debian install 052](../images/debian_install/debian_install_052.png)
+
+![Debian install 053](../images/debian_install/debian_install_053.png)
+
+Once you are done, click Save.
+
+![Debian install 054](../images/debian_install/debian_install_054.png)
+
 So, here is the conclusion of this tutorial.
