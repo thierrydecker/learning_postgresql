@@ -70,8 +70,6 @@ PostgreSQL will create a new database named `dvdrental`.
 
 Then quit the PostgreSQL shell.
 
-## Load the sample database with `psql` command-line tool
-
 ## Load the sample database with `pgadmin` tool
 
 You can use the `pgAdmin` tool to restore the sample database from the downloaded database file using the following 
@@ -83,4 +81,10 @@ Next, right-click on the `dvdrental` database and choose Restore… menu item as
 
 ![Load Sample Database](../images/sample_database_004.png)
 
+Select the file `dvdrental.tar` and then click `Restore` button.
+
 ![Load Sample Database](../images/sample_database_005.png)
+
+After a successful restore you will see the objects newly created by the import command.
+
+![Load Sample Database](../images/sample_database_006.png)
