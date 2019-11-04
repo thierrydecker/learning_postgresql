@@ -82,3 +82,5 @@ First, launch the `pgAdmin` tool and connect to the PostgreSQL server.
 Next, right-click on the `dvdrental` database and choose Restore… menu item as shown in the following picture:
 
 ![Load Sample Database](../images/sample_database_004.png)
+
+![Load Sample Database](../images/sample_database_005.png)
