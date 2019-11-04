@@ -88,3 +88,7 @@ Select the file `dvdrental.tar` and then click `Restore` button.
 After a successful restore you will see the objects newly created by the import command.
 
 ![Load Sample Database](../images/sample_database_006.png)
+
+## Load the sample database with `psql` command-line tool
+
+![Load Sample Database](../images/sample_database_007.png)
