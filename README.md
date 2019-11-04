@@ -4,7 +4,7 @@
 
 - [What is PostgreSQL?](documents/postgresql_what.md)
 - [Install the architecture](documents/postgresql_debian_install.md)
-- [PostgreSQL Sample Database](documents/postgresql_debian_install.md)
+- [PostgreSQL Sample Database](documents/postgresql_sample_database.md)
 
 ## Fundamentals
 
