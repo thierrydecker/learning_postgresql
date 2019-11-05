@@ -33,6 +33,7 @@
 - [The EXCEPT operator](documents/postgresql_except.md)
 - [The GROUPING SETS](documents/postgresql_grouping_sets.md)
 - [The CUBE sub-clause](documents/postgresql_cube.md)
+- [The ROLLUP sub-clause](documents/postgresql_rollup.md)
 
 ## TODO
 
