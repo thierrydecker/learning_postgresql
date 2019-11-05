@@ -34,10 +34,10 @@
 - [The GROUPING SETS](documents/postgresql_grouping_sets.md)
 - [The CUBE sub-clause](documents/postgresql_cube.md)
 - [The ROLLUP sub-clause](documents/postgresql_rollup.md)
+- [Sub-query](documents/postgresql_subquery.md)
 
 ## TODO
 
-- [Sub-query](documents/postgresql_subquery.md)
 - [The CREATE TABLE statement](documents/postgresql_create_table.md)
 - [The INSERT statement](documents/postgresql_insert.md)
 
