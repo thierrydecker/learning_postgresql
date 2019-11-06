@@ -49,6 +49,7 @@
 - [Sub-query](documents/postgresql_subquery.md)
 - [The ANY operator](documents/postgresql_any.md)
 - [The ALL operator](documents/postgresql_all.md)
+- [The EXISTS operator](documents/postgresql_exists.md)
 
 ## TODO
 
