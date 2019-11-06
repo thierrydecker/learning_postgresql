@@ -75,7 +75,8 @@
 
 ## Conditional Expressions and Operators
 
-- [The PostgreSQL CTEs](documents/postgresql_cte.md)
+- [The CTEs](documents/postgresql_cte.md)
+- [The Recursive Queries](documents/postgresql_recursive_queries.md)
 
 ## Tips and Tricks
 
