@@ -51,10 +51,29 @@
 - [The ALL operator](documents/postgresql_all.md)
 - [The EXISTS operator](documents/postgresql_exists.md)
 
-## TODO
+## Common Table Expressions
+
+## Modifying Data
+
+- [The INSERT statement](documents/postgresql_insert.md)
+
+## Transactions
+
+## Import and Export Data
+
+## Managing Databases
+
+## Managing Tables
 
 - [The CREATE TABLE statement](documents/postgresql_create_table.md)
-- [The INSERT statement](documents/postgresql_insert.md)
+
+## Constraints
+
+## Data Types
+
+## Schemas
+
+## Conditional Expressions and Operators
 
 ## Tips and Tricks
 
