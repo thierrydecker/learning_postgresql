@@ -75,6 +75,8 @@
 
 ## Conditional Expressions and Operators
 
+- [The PostgreSQL CTEs](documents/postgresql_cte.md)
+
 ## Tips and Tricks
 
 - [Tips & Tricks](documents/postgresql_tips.md)
