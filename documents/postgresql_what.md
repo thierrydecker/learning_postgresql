@@ -84,6 +84,4 @@ Some featured companies are Apple, Fujitsu, Red Hat, Cisco, Juniper Network, etc
 
 Check it out the PostgreSQL’s featured users section for the complete list of organizations who are using PostgreSQL.
 
-PostgreSQL’s community pronounces PostgreSQL as /ˈpoʊstɡrɛs ˌkjuː ˈɛl/. 
-
 The original name of PostgreSQL is Postgres therefore, sometimes PostgreSQL is referred as Postgres.
