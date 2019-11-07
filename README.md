@@ -81,3 +81,4 @@
 ## Tips and Tricks
 
 - [Tips & Tricks](documents/postgresql_tips.md)
+- [SQL Coding Style](documents/postgresql_coding_style.md)
