@@ -59,6 +59,7 @@
 ## Modifying Data
 
 - [The INSERT statement](documents/postgresql_insert.md)
+- [The UPDATE statement](documents/postgresql_update.md)
 
 ## Transactions
 
