@@ -53,6 +53,9 @@
 
 ## Common Table Expressions
 
+- [The CTEs](documents/postgresql_cte.md)
+- [The Recursive Queries](documents/postgresql_recursive_queries.md)
+
 ## Modifying Data
 
 - [The INSERT statement](documents/postgresql_insert.md)
@@ -74,9 +77,6 @@
 ## Schemas
 
 ## Conditional Expressions and Operators
-
-- [The CTEs](documents/postgresql_cte.md)
-- [The Recursive Queries](documents/postgresql_recursive_queries.md)
 
 ## Various topics
 
