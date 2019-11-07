@@ -61,6 +61,7 @@
 - [The INSERT statement](documents/postgresql_insert.md)
 - [The UPDATE statement](documents/postgresql_update.md)
 - [The UPDATE join statement](documents/postgresql_update_join.md)
+- [The INSERT ON CONFLICT (Upsert) statement](documents/postgresql_upsert.md)
 
 ## Transactions
 
