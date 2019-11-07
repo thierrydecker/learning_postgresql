@@ -78,7 +78,7 @@
 - [The CTEs](documents/postgresql_cte.md)
 - [The Recursive Queries](documents/postgresql_recursive_queries.md)
 
-## Tips and Tricks
+## Various topics
 
 - [Tips & Tricks](documents/postgresql_tips.md)
 - [SQL Coding Style](documents/postgresql_coding_style.md)
