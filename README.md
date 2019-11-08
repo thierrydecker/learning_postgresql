@@ -72,6 +72,8 @@
 
 ## Managing Databases
 
+- [The CREATE DATABASE Statement](documents/postgresql_create_database.md)
+
 ## Managing Tables
 
 - [The CREATE TABLE statement](documents/postgresql_create_table.md)
